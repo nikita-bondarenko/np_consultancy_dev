@@ -30,6 +30,7 @@
 }
 
 
+
 .modal__body {
     display: flex;
     flex-direction: column;
@@ -46,6 +47,11 @@
     margin-bottom: 20px;
     text-align: center;
     width: fit-content;
+}
+
+.modal__form .modal__title {
+    margin-bottom: 0px;
+
 }
 
 .modal__text {
@@ -325,6 +331,61 @@
 
 .error .input {
     animation: shake ease-in-out 0.5s;
+}
+
+@media (max-width: 767px) {
+
+    .modal__window {
+
+        padding: 40px 16px 30px;
+
+    }
+
+
+
+    .modal__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 122%;
+        max-width: 80%;
+
+    }
+
+    .form__title {
+        margin-inline: 0;
+        text-align: left;
+        align-self: flex-start;
+        margin-inline: 0;
+    }
+
+    .modal__text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+
+    .modal__cross-button {
+        top: 12px;
+        right: 12px;
+        width: 32px;
+        height: 32px;
+
+
+    }
+
+    .form__body {
+        gap: 20px;
+    }
+
+    .input {
+        padding: 16px 18px;
+    }
+
+    .select__arrow {
+        weight: 16px;
+        height: 16px;
+        right: 16px
+    }
 }
 
 @keyframes pending {
