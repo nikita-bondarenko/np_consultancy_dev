@@ -1,0 +1,361 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: rgba(14, 57, 117, 0.6);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms ease-in-out;
+}
+
+.modal.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal__window {
+    width: 100%;
+    max-width: 676px;
+    background: white;
+    border-radius: 20px;
+    padding: 60px;
+    box-sizing: border-box;
+    margin: auto 0;
+    position: relative;
+}
+
+
+.modal__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 434px;
+    margin-inline: auto;
+}
+
+.modal__title {
+    color: #0E3975;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 122%;
+    margin-bottom: 20px;
+    text-align: center;
+    width: fit-content;
+}
+
+.modal__text {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 122%;
+    margin-bottom: 30px;
+}
+
+
+.modal__cross-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    background-color: transparent;
+
+}
+
+.modal__cross-button:hover {
+    background-color: gainsboro;
+
+}
+
+.cross-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center/contain url('/assets/images/icons/cross.svg');
+
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form {}
+
+.form__body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.form__input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.name {}
+
+.input__label {
+    color: #16181F;
+    font-family: Involve;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 122%;
+}
+
+.input {
+    color: #3A3D46;
+    padding: 20px 24px;
+    border-radius: 14px;
+    border: 1px solid #C0C2CB;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 122%;
+    transition: border-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+    outline: 2px solid transparent;
+}
+
+.input:focus {
+    border-color: #0E3975;
+    outline: 2px solid #88b3ef;
+}
+
+.input::placeholder {
+    color: #757575;
+}
+
+.preferred-way {}
+
+.phone {}
+
+.select {
+    position: relative;
+    cursor: pointer;
+}
+
+.select__arrow {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: no-repeat center/contain url(/assets/images/icons/arrow-down.svg);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.select.open .select__arrow {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.select__value {}
+
+.select__dropdown {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    padding-block: 11px;
+    border-radius: 14px;
+    border: 1px solid #C0C2CB;
+    z-index: 50;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.select.open .select__dropdown {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.select__options {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.select__item {}
+
+.select__option {
+    padding: 5px 24px;
+    position: relative;
+    font-size: 16px;
+    line-height: 122%;
+    font-weight: 600;
+    color: #3A3D46;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    width: 100%;
+    text-align: left;
+}
+
+.select__option:hover {
+    background-color: #c3dcff;
+}
+
+.select__option.selected {
+    color: #0E3975;
+    pointer-events: none;
+}
+
+.select__option::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 19px;
+    height: 19px;
+    right: 24px;
+    background: no-repeat center/contain url(/assets/images/icons/sign.svg);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.select__option.selected::after {
+    opacity: 1;
+}
+
+
+
+.telegram {}
+
+.email {}
+
+.form__checkbox {
+    display: flex;
+    gap: 8px;
+}
+
+.agreement {}
+
+.checkbox__button {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    outline: 2px solid transparent;
+    transition: outline 0.3s ease-in-out;
+    border-radius: 1px;
+}
+
+.checkbox__button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: no-repeat center/contain url(/assets/images/icons/checkbox_rect.svg);
+    z-index: 10;
+}
+
+.checkbox__button::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: no-repeat center/contain url(/assets/images/icons/checkbox_sign.svg);
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.checkbox__button.checked::after {
+    opacity: 1;
+}
+
+.sign {}
+
+.checkbox__label {
+    font-size: 14px;
+    line-height: 122%;
+    color: #16181F;
+}
+
+.checkbox__label a {
+    color: #0E3975;
+    font-weight: 500;
+}
+
+.form__button {
+    margin-inline: auto;
+    position: relative;
+    transition: opacity 0.3s ease-in-out
+}
+
+.form__button::before {
+    position: absolute;
+    content: '';
+    height: 200%;
+    width: 50px;
+    background-color: white;
+    top: 50%;
+    right: 130%;
+    filter: blur(12px);
+    opacity: 0.6;
+    transform: rotate(15deg) translateY(-50%);
+}
+
+.form__button.pending {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.form__button.pending::before {
+    animation: pending ease-in-out 1s infinite;
+}
+
+.form__title {
+    margin-inline: auto;
+}
+
+.error .input,
+.error .checkbox__button {
+    outline: 2px solid rgb(241, 37, 156);
+}
+
+.error .input {
+    animation: shake ease-in-out 0.5s;
+}
+
+@keyframes pending {
+    from {
+        right: 130%;
+    }
+
+    to {
+        right: -30%
+    }
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    20% {
+        transform: translateX(10px);
+
+    }
+
+    40% {
+        transform: translateX(-5px);
+
+    }
+
+    50% {
+        transform: translateX(0px);
+
+    }
+}

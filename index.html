@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/gutenberg-editor.css">
+    <script src="assets/js/modal.js" defer></script>
+
+</head>
+
+<body>
+
+    <main>
+        <button class="open-modal-button" data-open-modal-with-id="modal-offer">Open note</button>
+
+        <button class="open-modal-button" data-open-modal-with-id="modal-form">Open form</button>
+    </main>
+    <div id="modal-offer" class="modal ">
+
+        <div class="modal__window">
+            <div class="modal__body">
+                <h2 class="modal__title">
+                    Нужна консультация?
+                </h2>
+                <p class="modal__text">
+                    Свяжитесь с нами — и мы расскажем,
+                    как сможем решить именно вашу задачу.
+                </p>
+                <button data-open-modal-with-id="modal-form" class=" np-button open-modal-button">Связаться с
+                    нами</button>
+            </div>
+
+            <button class="modal__close modal__cross-button ">
+                <span class="cross-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <div id="modal-form" class="modal">
+        <div class="modal__window">
+            <form id="form" class="modal__form form">
+                <h2 class="modal__title form__title">Оставьте заявку</h2>
+                <div class="form__body">
+                    <div class="form__input name">
+                        <p class="input__label">Ваше имя</p>
+                        <input class="input " name="name" placeholder="Иван Иванов" type="text">
+
+                    </div>
+
+                    <div class="form__input way">
+                        <p class="input__label">Предпочтительный способ связи</p>
+                        <div tabindex="0" class="select input">
+                            <input type="text" name="way" value="phone" hidden>
+
+                            <div class="select__value">Телефон</div>
+                            <span class="select__arrow"></span>
+                            <div class="select__dropdown">
+                                <ul class="select__options">
+                                    <li class="select__item">
+                                        <button data-value="phone" class="select__option selected">Телефон</button>
+                                    </li>
+                                    <li class="select__item">
+                                        <button data-value="telegram" class="select__option">Телеграм</button>
+                                    </li>
+                                    <li class="select__item">
+                                        <button data-value="email" class="select__option">Email</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__input phone ">
+                        <p class="input__label">Ваш телефон</p>
+                        <input class="input " name="phone" autocomplete="tel" placeholder="+7 (976) 777-77-77"
+                            type="text">
+                    </div>
+                    <div class="form__input telegram">
+                        <p class="input__label">Ваш Telegram</p>
+                        <input class="input " name="telegram" placeholder="@accountname" type="text">
+                    </div>
+                    <div class="form__input email">
+                        <p class="input__label">Ваш email</p>
+                        <input class="input " placeholder="example@gmail.com" name="email" type="text">
+                    </div>
+                    <div class="form__checkbox checkbox agreement">
+                        <input type="checkbox" checked name="agreement" hidden>
+                        <button class="checkbox__button checked">
+                        </button>
+                        <div class="checkbox__label">
+                            Я соглашаюсь с условиями <a target="_blank"
+                                href="https://npconsultancy.agency/wp-content/themes/np-consulting/assets/docs/np_privacy_ru.pdf">Политики
+                                конфиденциальности</a>.
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" 
+                    class="np-button form__button submit ">Оставить заявку</button>
+            </form>
+
+            <button class="modal__close modal__cross-button">
+                <span class="cross-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div id="modal-success" class="modal ">
+        <div class="modal__window">
+            <div class="modal__body">
+                <h2 class="modal__title">
+                    Ваша заявка отправлена!
+                </h2>
+                <p class="modal__text">
+                    Оператор свяжется с вами <br/> в течении рабочего дня.
+                </p>
+                <button class=" np-button modal__close">Понятно</button>
+            </div>
+            <button class="modal__close modal__cross-button">
+                <span class="cross-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/scroll-trigger.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/lozad.min.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
+    <!-- <script src="assets/js/gutenberg-editor.js"></script> -->
+</body>
+
+</html>
