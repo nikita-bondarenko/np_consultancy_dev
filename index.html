@@ -8,21 +8,28 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/modal.css">
-    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/gutenberg-editor.css">
     <link rel="stylesheet" href="assets/css/services.css">
     <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/team.css">
+    <link rel="stylesheet" href="assets/css/advantages.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/feedbacks.css">
+
     <script src="assets/js/modal.js" defer></script>
     <script src="assets/js/services.js" defer></script>
-
+    <script src="assets/js/about.js" defer></script>
+    <script src="assets/js/team.js" defer></script>
+    <script src="assets/js/advantages.js"></script>
+    <script src="assets/js/feedbacks.js"></script>
 </head>
 
 <body>
 
     <main>
         <section class="services container section_indent">
-            <h2 class="title-section">Наши услуги</h2>
+            <h2 class="title-section services__title">Наши услуги</h2>
             <ul class="services__list">
                 <li class="services__item">
                     <div class="service">
@@ -48,7 +55,8 @@
                                         получают ставку по ипотеке 4,18%</p>
                                 </li>
                             </ul>
-                            <button class="btn service__btn np-button">Узнать подробнее</button>
+                            <button class="btn service__btn np-button open-modal-button"
+                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
                         </div>
                     </div>
                 </li>
@@ -75,7 +83,8 @@
                                         запроса</p>
                                 </li>
                             </ul>
-                            <button class="btn service__btn np-button">Узнать подробнее</button>
+                            <button class="btn service__btn np-button open-modal-button"
+                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
                         </div>
                     </div>
                 </li>
@@ -102,7 +111,8 @@
                                         предсказуемым</p>
                                 </li>
                             </ul>
-                            <button class="btn service__btn np-button">Узнать подробнее</button>
+                            <button class="btn service__btn np-button open-modal-button"
+                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
                         </div>
                     </div>
                 </li>
@@ -127,7 +137,8 @@
                                         контрагентами</p>
                                 </li>
                             </ul>
-                            <button class="btn service__btn np-button">Узнать подробнее</button>
+                            <button class="btn service__btn np-button open-modal-button"
+                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
                         </div>
                     </div>
                 </li>
@@ -153,7 +164,8 @@
                                         нарушения визового законодательства</p>
                                 </li>
                             </ul>
-                            <button class="btn service__btn np-button">Узнать подробнее</button>
+                            <button class="btn service__btn np-button open-modal-button"
+                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
                         </div>
                     </div>
                 </li>
@@ -178,7 +190,8 @@
                                         лицензии</p>
                                 </li>
                             </ul>
-                            <button class="btn service__btn np-button">Узнать подробнее</button>
+                            <button class="btn service__btn np-button open-modal-button"
+                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
                         </div>
                     </div>
                 </li>
@@ -206,25 +219,28 @@
                                         контрагентами</p>
                                 </li>
                             </ul>
-                            <button class="btn service__btn np-button">Узнать подробнее</button>
+                            <button class="btn service__btn np-button open-modal-button"
+                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
                         </div>
                     </div>
                 </li>
             </ul>
         </section>
         <section class="about container section_indent">
-            <h2 class="title-section">О нас</h2>
+            <h2 class="title-section about__title">О нас</h2>
             <div class="about__body">
                 <div class="about__text">
                     <p>Мы — консалтинговая компания, которая помогает бизнесу расти, находить новые возможности и
                         справляться с вызовами. Работаем с цифрами, стратегиями и людьми — и всегда стремимся к
                         практическому результату. Скоро здесь появится подробная история о нас. Пока что — просто делаем
                         свою работу.
-                        <br /> <br />
+                    </p>
+                    <p>
                         Мы — те, кто помогает бизнесу не тонуть в хаосе и неопределённости. Умеем находить структуру в
                         беспорядке, задавать правильные вопросы и предлагать работающие решения. Здесь скоро будет чуть
                         больше текста и чуть меньше загадок. Здесь скоро будет чуть больше текста и чуть меньше загадок.
-                        <br /><br />
+                    </p>
+                    <p>
                         Мы — те, кто помогает бизнесу не тонуть в хаосе и неопределённости. Умеем находить структуру в
                         беспорядке, задавать правильные вопросы и предлагать работающие решения. Здесь скоро будет чуть
                         больше текста и чуть меньше загадок. Здесь скоро будет чуть больше текста и чуть меньше загадок.
@@ -232,28 +248,560 @@
                     </p>
 
                 </div>
-                <div class="about__image" style="background-image: url(/assets/images/about/1.png);"></div>
+                <div class="about__image" style="background-image: url(/assets/images/about/1.webp);"></div>
             </div>
             <ul class="about__list">
                 <li class="about__item">
                     <div class="about__card">
                         <h3 class="about__subtitle">30+</h3>
-                        <p>Успешных кейсов</p>
+                        <p class="about__info">Успешных кейсов</p>
                     </div>
                 </li>
                 <li class="about__item">
                     <div class="about__card">
                         <h3 class="about__subtitle">4+ лет</h3>
-                        <p>На рынке Дубая</p>
+                        <p class="about__info">На рынке Дубая</p>
                     </div>
                 </li>
                 <li class="about__item">
                     <div class="about__card">
                         <h3 class="about__subtitle">30+</h3>
-                        <p>Успешных кейсов</p>
+                        <p class="about__info">Успешных кейсов</p>
                     </div>
                 </li>
             </ul>
+        </section>
+
+        <section class="team container section_indent">
+            <h2 class="title-section team__title">Наша команда</h2>
+            <div class="team__body">
+                <div class="team__content">
+                    <div class="team__text">
+                        <p>Мы — консалтинговая компания, которая помогает бизнесу расти, находить новые возможности и
+                            справляться с вызовами.</p>
+                        <p>Работаем с цифрами, стратегиями и людьми — и всегда
+                            стремимся к практическому результату. Скоро здесь появится подробная история о нас. Пока что
+                            — просто делаем свою работу.</p>
+                    </div>
+                    <button class="btn btn-main open-modal-button np-button"
+                        data-open-modal-with-id="modal-form">Бесплатная
+                        консультация</button>
+                </div>
+                <div class="team__image" style="background-image: url('/assets/images/team/1.png');"></div>
+            </div>
+        </section>
+        <section class="advantages container section_indent">
+            <h2 class="title-section advantages__title">Наши преимущества</h2>
+            <div class="advantages__body">
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <div class="advantage">
+                            <div class="advantage__image"
+                                style="background-image: url('/assets/images/advantages/1.png')">
+                            </div>
+                            <div class="accordion-item advantage__content">
+                                <div class="accordion-item__heading advantage__title">Ни одного отказа по ипотеке</div>
+                                <div class="accordion-item__wrapper">
+                                    <div class="accordion-item__content advantage__text">
+                                        <p>
+                                            За всю практику не было ни одного отрицательного решения по ипотеке,
+                                            оформляемой
+                                            при нашем содействии
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantage">
+                            <div class="advantage__image"
+                                style="background-image: url('/assets/images/advantages/2.png')">
+                            </div>
+                            <div class="accordion-item advantage__content">
+                                <div class="accordion-item__heading advantage__title">Четкость и прозрачность</div>
+                                <div class="accordion-item__wrapper">
+                                    <div class="accordion-item__content advantage__text">
+                                        <p>
+                                            Делаем решение ваших задач понятным и предсказуемым с точки зрения сроков,
+                                            затрат и
+                                            конечного результата
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantage">
+                            <div class="advantage__image"
+                                style="background-image: url('/assets/images/advantages/3.png')">
+                            </div>
+                            <div class="accordion-item advantage__content">
+                                <div class="accordion-item__heading advantage__title">Помощь в открытии бизнеса с нуля
+                                </div>
+                                <div class="accordion-item__wrapper">
+                                    <div class="accordion-item__content advantage__text">
+                                        <p>
+                                            Трансформируем ваши идеи и планы в эффективно работающую компанию
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="advantages__list">
+
+
+                    <li class="advantages__item">
+                        <div class="advantage">
+                            <div class="advantage__image"
+                                style="background-image: url('/assets/images/advantages/4.png')">
+                            </div>
+                            <div class="accordion-item advantage__content">
+                                <div class="accordion-item__heading advantage__title">4 года на рынке ОАЭ</div>
+                                <div class="accordion-item__wrapper">
+                                    <div class="accordion-item__content advantage__text">
+                                        <p>
+
+                                            За это время мы закрыли множество успешных кейсов, поэтому знаем, как
+                                            действовать в
+                                            любой ситуации
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantage">
+                            <div class="advantage__image"
+                                style="background-image: url('/assets/images/advantages/5.png')">
+                            </div>
+                            <div class="accordion-item advantage__content">
+                                <div class="accordion-item__heading advantage__title">Сопровождение на всех этапах</div>
+                                <div class="accordion-item__wrapper">
+                                    <div class="accordion-item__content advantage__text">
+                                        <p>
+                                            Оказываем комплексную поддержку — от первого обращения до достижения
+                                            поставленной
+                                            цели
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantage">
+                            <div class="advantage__image"
+                                style="background-image: url('/assets/images/advantages/6.png')">
+                            </div>
+                            <div class="accordion-item advantage__content">
+                                <div class="accordion-item__heading advantage__title">Заслуженное доверие</div>
+                                <div class="accordion-item__wrapper">
+                                    <div class="accordion-item__content advantage__text">
+                                        <p>
+                                            Действующие клиенты высоко оценивают нашу экспертность и рекомендуют нас
+                                            коллегам,
+                                            партнерам и друзьям
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="why-uae" class="why-uae">
+            <div class="container">
+                <div class="why-uae__top">
+                    <h2 class="why-uae__title">Почему ОАЭ</h2>
+                    <div class="why-uae__arrows">
+                        <button type="button" class="why-uae__arrow arrow arrow--prev">
+                            <svg width="29" height="52" viewBox="0 0 29 52" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.70853e-07 26C8.71951e-07 23.6871 1.43977 22.2553 2.95593 20.7497L22.65 1.08916C24.1025 -0.363055 26.4581 -0.363055 27.9106 1.08916C29.3631 2.53885 29.3631 4.8898 27.9106 6.33942L8.21913 26L27.9106 45.6606C29.3631 47.1103 29.3631 49.4612 27.9106 50.9108C26.4581 52.3631 24.1025 52.3631 22.65 50.9108L2.95593 31.2502C1.43984 29.7447 6.69754e-07 28.3129 7.70853e-07 26Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                        <button type="button" class="why-uae__arrow arrow arrow--next">
+                            <svg width="29" height="52" viewBox="0 0 29 52" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.70853e-07 26C8.71951e-07 23.6871 1.43977 22.2553 2.95593 20.7497L22.65 1.08916C24.1025 -0.363055 26.4581 -0.363055 27.9106 1.08916C29.3631 2.53885 29.3631 4.8898 27.9106 6.33942L8.21913 26L27.9106 45.6606C29.3631 47.1103 29.3631 49.4612 27.9106 50.9108C26.4581 52.3631 24.1025 52.3631 22.65 50.9108L2.95593 31.2502C1.43984 29.7447 6.69754e-07 28.3129 7.70853e-07 26Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="why-uae__slider swiper">
+                    <div class="why-uae__slider-wrapper swiper-wrapper">
+                        <div class="why-uae-card swiper-slide">
+                            <div class="why-uae-card__image">
+                                <picture>
+                                    <source srcset="/assets/images/why-uae/04@2x-360.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx) and (max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/04@360.webp" type="image/webp"
+                                        media="(max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/04@2x-360.png"
+                                        media="(min-resolution: 2dppx) and (max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/04@360.png" type="image/webp"
+                                        media="(max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/04@2x-768.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx) and (max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/04@768.webp" type="image/webp"
+                                        media="(max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/04@2x-768.png"
+                                        media="(min-resolution: 2dppx) and (max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/04@768.png" type="image/webp"
+                                        media="(max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/04@2x.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx)" />
+                                    <source srcset="/assets/images/why-uae/04.webp" type="image/webp" />
+                                    <source srcset="/assets/images/why-uae/04@2x.png" media="(min-resolution: 2dppx)" />
+                                    <img width="570" height="300" loading="lazy" src="/assets/images/why-uae/01.png"
+                                        alt="Свободные экономические зоны в ОАЭ NP Consultancy"
+                                        title="Свободные экономические зоны в ОАЭ NP Consultancy" />
+                                </picture>
+                            </div>
+                            <div class="why-uae-card__content">
+                                <h3 class="why-uae-card__title">
+                                    Благоприятные условия
+                                    <br />для комфортной жизни
+                                </h3>
+                                <div class="why-uae-card__text">
+                                    <p>
+                                        В&nbsp;ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные
+                                        и&nbsp;жилые помещения, а&nbsp;также телекоммуникации
+                                        и&nbsp;интернет-соединения, отвечающие высоким стандартам.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="why-uae-card swiper-slide">
+
+                            <div class="why-uae-card__image">
+                                <picture>
+                                    <source srcset="/assets/images/why-uae/01@2x-360.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx) and (max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/01@360.webp" type="image/webp"
+                                        media="(max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/01@2x-360.png"
+                                        media="(min-resolution: 2dppx) and (max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/01@360.png" type="image/webp"
+                                        media="(max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/01@2x-768.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx) and (max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/01@768.webp" type="image/webp"
+                                        media="(max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/01@2x-768.png"
+                                        media="(min-resolution: 2dppx) and (max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/01@768.png" type="image/webp"
+                                        media="(max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/01@2x.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx)" />
+                                    <source srcset="/assets/images/why-uae/01.webp" type="image/webp" />
+                                    <source srcset="/assets/images/why-uae/01@2x.png" media="(min-resolution: 2dppx)" />
+                                    <img width="570" height="300" loading="lazy" src="/assets/images/why-uae/01.png"
+                                        alt="Свободные экономические зоны в ОАЭ NP Consultancy"
+                                        title="Свободные экономические зоны в ОАЭ NP Consultancy" />
+                                </picture>
+                            </div>
+                            <div class="why-uae-card__content">
+                                <h3 class="why-uae-card__title">
+                                    Свободные
+                                    <br />
+                                    экономические зоны
+                                </h3>
+                                <div class="why-uae-card__text">
+                                    <p>
+                                        ОАЭ располагают множеством фризон с&nbsp;индивидуальными правилами ведения
+                                        бизнеса. Каждая из&nbsp;них предоставляет
+                                        предпринимателям возможность полного владения иностранным капиталом без
+                                        привлечения местных спонсоров, освобождение
+                                        от&nbsp;налогов и&nbsp;экспортных/импортных пошлин, а&nbsp;также доступ
+                                        к&nbsp;открытию компаний
+                                        <br />
+                                        без получения большого количества разрешений в&nbsp;государственных учреждениях.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="why-uae-card swiper-slide">
+                            <div class="why-uae-card__image">
+                                <picture>
+                                    <source srcset="/assets/images/why-uae/02@2x-360.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx) and (max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/02@360.webp" type="image/webp"
+                                        media="(max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/02@2x-360.png"
+                                        media="(min-resolution: 2dppx) and (max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/02@360.png" type="image/webp"
+                                        media="(max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/02@2x-768.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx) and (max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/02@768.webp" type="image/webp"
+                                        media="(max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/02@2x-768.png"
+                                        media="(min-resolution: 2dppx) and (max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/02@768.png" type="image/webp"
+                                        media="(max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/02@2x.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx)" />
+                                    <source srcset="/assets/images/why-uae/02.webp" type="image/webp" />
+                                    <source srcset="/assets/images/why-uae/02@2x.png" media="(min-resolution: 2dppx)" />
+                                    <img width="570" height="300" loading="lazy" src="/assets/images/why-uae/01.png"
+                                        alt="Свободные экономические зоны в ОАЭ NP Consultancy"
+                                        title="Свободные экономические зоны в ОАЭ NP Consultancy" />
+                                </picture>
+                            </div>
+                            <div class="why-uae-card__content">
+                                <h3 class="why-uae-card__title">
+                                    Налоговые
+                                    <br />
+                                    льготы
+                                </h3>
+                                <div class="why-uae-card__text">
+                                    <p>
+                                        В&nbsp;Эмиратах действует одна из&nbsp;самых лояльных налоговых систем
+                                        в&nbsp;мире. Физические лица&nbsp;&mdash; резиденты ОАЭ
+                                        не&nbsp;облагаются никакими налогами и&nbsp;могут получить документально
+                                        подтвержденный статус налогового резидента Эмиратов.
+                                        А&nbsp;корпоративный налог&nbsp;9% распространяется только на&nbsp;прибыль
+                                        компаний свыше AED 375&nbsp;тыс. ($102&nbsp;тыс.).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="why-uae-card swiper-slide">
+                            <div class="why-uae-card__image">
+                                <picture>
+                                    <source srcset="/assets/images/why-uae/03@2x-360.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx) and (max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/03@360.webp" type="image/webp"
+                                        media="(max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/03@2x-360.png"
+                                        media="(min-resolution: 2dppx) and (max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/03@360.png" type="image/webp"
+                                        media="(max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/03@2x-768.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx) and (max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/03@768.webp" type="image/webp"
+                                        media="(max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/03@2x-768.png"
+                                        media="(min-resolution: 2dppx) and (max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/03@768.png" type="image/webp"
+                                        media="(max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/03@2x.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx)" />
+                                    <source srcset="/assets/images/why-uae/03.webp" type="image/webp" />
+                                    <source srcset="/assets/images/why-uae/03@2x.png" media="(min-resolution: 2dppx)" />
+                                    <img width="570" height="300" loading="lazy" src="/assets/images/why-uae/01.png"
+                                        alt="Свободные экономические зоны в ОАЭ NP Consultancy"
+                                        title="Свободные экономические зоны в ОАЭ NP Consultancy" />
+                                </picture>
+                            </div>
+                            <div class="why-uae-card__content">
+                                <h3 class="why-uae-card__title">Стратегическое географическое положение</h3>
+                                <div class="why-uae-card__text">
+                                    <p>
+                                        ОАЭ находятся на&nbsp;перекрестке торговых путей между Европой, Азией
+                                        и&nbsp;Африкой. Это делает страну идеальной площадкой для
+                                        ведения международной торговли и&nbsp;логистики, а&nbsp;также для выхода
+                                        на&nbsp;быстрорастущие рынки Ближнего Востока
+                                        и&nbsp;Северной Африки (MENA).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="why-uae-card swiper-slide">
+                            <div class="why-uae-card__image">
+                                <picture>
+                                    <source srcset="/assets/images/why-uae/05@2x-360.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx) and (max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/05@360.webp" type="image/webp"
+                                        media="(max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/05@2x-360.png"
+                                        media="(min-resolution: 2dppx) and (max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/05@360.png" type="image/webp"
+                                        media="(max-width: 576px)" />
+                                    <source srcset="/assets/images/why-uae/05@2x-768.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx) and (max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/05@768.webp" type="image/webp"
+                                        media="(max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/05@2x-768.png"
+                                        media="(min-resolution: 2dppx) and (max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/05@768.png" type="image/webp"
+                                        media="(max-width: 992px)" />
+                                    <source srcset="/assets/images/why-uae/05@2x.webp" type="image/webp"
+                                        media="(min-resolution: 2dppx)" />
+                                    <source srcset="/assets/images/why-uae/05.webp" type="image/webp" />
+                                    <source srcset="/assets/images/why-uae/05@2x.png" media="(min-resolution: 2dppx)" />
+                                    <img width="570" height="300" loading="lazy" src="/assets/images/why-uae/01.png"
+                                        alt="Свободные экономические зоны в ОАЭ NP Consultancy"
+                                        title="Свободные экономические зоны в ОАЭ NP Consultancy" />
+                                </picture>
+                            </div>
+                            <div class="why-uae-card__content">
+                                <h3 class="why-uae-card__title">
+                                    Безопасность
+                                    <br />
+                                    и&nbsp;комфорт
+                                </h3>
+                                <div class="why-uae-card__text">
+                                    <p>
+                                        ОАЭ известны высоким уровнем жизни и&nbsp;безопасности. В&nbsp;стране созданы
+                                        благоприятные условия не&nbsp;только для ведения
+                                        бизнеса,
+                                        <br />
+                                        но&nbsp;и&nbsp;для проживания, что является важным фактором для
+                                        предпринимателей, рассматривающих релокацию.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-uae__slider-pagination swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="feedbacks  section_indent">
+            <div class="container">
+                <div class="feedbacks__top">
+                    <h2 class="feedbacks__title title-section">Отзывы</h2>
+                    <div class="feedbacks__arrows">
+                        <button type="button" class="feedbacks__arrow arrow arrow--prev">
+                            <svg width="29" height="52" viewBox="0 0 29 52" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.70853e-07 26C8.71951e-07 23.6871 1.43977 22.2553 2.95593 20.7497L22.65 1.08916C24.1025 -0.363055 26.4581 -0.363055 27.9106 1.08916C29.3631 2.53885 29.3631 4.8898 27.9106 6.33942L8.21913 26L27.9106 45.6606C29.3631 47.1103 29.3631 49.4612 27.9106 50.9108C26.4581 52.3631 24.1025 52.3631 22.65 50.9108L2.95593 31.2502C1.43984 29.7447 6.69754e-07 28.3129 7.70853e-07 26Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                        <button type="button" class="feedbacks__arrow arrow arrow--next">
+                            <svg width="29" height="52" viewBox="0 0 29 52" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.70853e-07 26C8.71951e-07 23.6871 1.43977 22.2553 2.95593 20.7497L22.65 1.08916C24.1025 -0.363055 26.4581 -0.363055 27.9106 1.08916C29.3631 2.53885 29.3631 4.8898 27.9106 6.33942L8.21913 26L27.9106 45.6606C29.3631 47.1103 29.3631 49.4612 27.9106 50.9108C26.4581 52.3631 24.1025 52.3631 22.65 50.9108L2.95593 31.2502C1.43984 29.7447 6.69754e-07 28.3129 7.70853e-07 26Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper feedbacks__swiper">
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide feedbacks__card">
+                            <div class="feedback">
+                                <div class="feedback__text">
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты,
+                                        морские порты, дороги, офисные и жилые помещения, а также телекоммуникации
+                                        и интернет-соединения, отвечающие высоким стандартам.</p>
+                                </div>
+                                <h3 class="feedback__client">
+                                    Какая-то компания
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide feedbacks__card">
+                            <div class="feedback">
+                                <div class="feedback__text">
+                                    <p>ОАЭ располагают множеством фризон
+                                        с индивидуальными правилами ведения бизнеса. Каждая из них предоставляет
+                                        предпринимателям возможность полного владения иностранным капиталом без
+                                        привлечения
+                                        местных спонсоров, освобождение от налогов и экспортных/импортных пошлин, а
+                                        также
+                                        доступ
+                                        к открытию компаний
+                                        без получения большого количества разрешений
+                                        в государственных учреждениях.</p>
+                                </div>
+                                <h3 class="feedback__client">
+                                    Какая-то компания
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide feedbacks__card">
+                            <div class="feedback">
+                                <div class="feedback__text">
+                                    <p>В Эмиратах действует одна из самых лояльных налоговых систем в мире. Физические
+                                        лица
+                                        —
+                                        резиденты ОАЭ не облагаются никакими налогами и могут получить документально
+                                        подтвержденный статус налогового резидента Эмиратов.
+                                        А корпоративный налог 9% распространяется только на прибыль компаний свыше AED
+                                        375
+                                        тыс.
+                                        ($102 тыс.).</p>
+                                </div>
+                                <h3 class="feedback__client">
+                                    Какая-то компания
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide feedbacks__card">
+                            <div class="feedback">
+                                <div class="feedback__text">
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты,
+                                        морские порты, дороги, офисные и жилые помещения, а также телекоммуникации
+                                        и интернет-соединения, отвечающие высоким стандартам.</p>
+                                </div>
+                                <h3 class="feedback__client">
+                                    Какая-то компания
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide feedbacks__card">
+                            <div class="feedback">
+                                <div class="feedback__text">
+                                    <p>ОАЭ располагают множеством фризон
+                                        с индивидуальными правилами ведения бизнеса. Каждая из них предоставляет
+                                        предпринимателям возможность полного владения иностранным капиталом без
+                                        привлечения
+                                        местных спонсоров, освобождение от налогов и экспортных/импортных пошлин, а
+                                        также
+                                        доступ
+                                        к открытию компаний
+                                        без получения большого количества разрешений
+                                        в государственных учреждениях.</p>
+                                </div>
+                                <h3 class="feedback__client">
+                                    Какая-то компания
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide feedbacks__card">
+                            <div class="feedback">
+                                <div class="feedback__text">
+                                    <p>В Эмиратах действует одна из самых лояльных налоговых систем в мире. Физические
+                                        лица
+                                        —
+                                        резиденты ОАЭ не облагаются никакими налогами и могут получить документально
+                                        подтвержденный статус налогового резидента Эмиратов.
+                                        А корпоративный налог 9% распространяется только на прибыль компаний свыше AED
+                                        375
+                                        тыс.
+                                        ($102 тыс.).</p>
+                                </div>
+                                <h3 class="feedback__client">
+                                    Какая-то компания
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedbacks__pagination swiper-pagination"></div>
+
+                </div>
+            </div>
         </section>
         <button class="open-modal-button" data-open-modal-with-id="modal-offer">Open note</button>
 
@@ -367,7 +915,7 @@
     <script src="assets/js/scroll-trigger.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/lozad.min.js"></script>
-    <!-- <script src="assets/js/script.js"></script> -->
+    <script src="assets/js/script.js"></script>
     <!-- <script src="assets/js/gutenberg-editor.js"></script> -->
 </body>
 

@@ -8,7 +8,11 @@
     font-size: 58px;
     font-weight: 600;
     line-height: 122%;
+}
+
+.services__title {
     margin-bottom: 60px;
+
 }
 
 .services__list {
@@ -180,7 +184,11 @@
 
     .title-section {
         font-size: 36px;
+    }
+
+    .services__title {
         margin-bottom: 40px;
+
     }
 
     .services__list {

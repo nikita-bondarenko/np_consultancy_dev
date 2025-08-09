@@ -1,21 +1,143 @@
-.about {
+.about {}
+
+.about__title {
+    margin-bottom: 30px;
 }
-.section_indent {
-}
-.title-section {
-}
+
+.section_indent {}
+
+.title-section {}
+
 .about__body {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 50px;
 }
+
 .about__text {
+    color: #16181F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 122%;
+    /* 19.52px */
 }
+
+.about__text p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 .about__image {
+    border-radius: 20px;
+    height: 100%;
+    background: no-repeat center/cover;
 }
+
 .about__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 23px;
 }
-.about__item {
-}
+
+.about__item {}
+
 .about__card {
+    border-radius: 20px;
+    border: 1px solid #C0C2CB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 200px;
+    padding: 20px;
 }
+
 .about__subtitle {
+    color: #0E3975;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 122%;
+    /* 48.8px */
+}
+
+.about__info {
+    color: #16181F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 122%;
+    /* 19.52px */
+}
+
+@media (max-width: 1200px) {
+    .about__body {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .about__image {
+        order: -1;
+        min-height: 300px;
+    }
+    
+    .about__list {
+        gap: 20px;
+    }
+    
+    .about__card {
+        height: 180px;
+        gap: 8px;
+    }
+    
+    .about__subtitle {
+        font-size: 36px;
+    }
+    
+    .about__info {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about__title {
+        margin-bottom: 20px;
+    }
+    
+    .about__body {
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .about__text {
+        font-size: 15px;
+    }
+    
+    .about__text p:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    
+    .about__image {
+        min-height: 250px;
+    }
+    
+    .about__list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .about__card {
+        height: 160px;
+        padding: 20px;
+        gap: 6px;
+    }
+    
+    .about__subtitle {
+        font-size: 28px;
+    }
+    
+    .about__info {
+        font-size: 14px;
+        text-align: center;
+    }
 }

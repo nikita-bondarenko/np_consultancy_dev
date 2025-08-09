@@ -1,0 +1,154 @@
+.advantages {}
+
+.section_indent {}
+
+.title-section {}
+
+.advantages__title {
+    margin-bottom: 60px;
+}
+
+.advantages__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.advantages__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.advantages__item {}
+
+.advantage {}
+
+.advantage__image {
+    aspect-ratio: 688/335;
+    border-radius: 20px;
+    border: 1px solid #C0C2CB;
+    margin-bottom: 10px;
+    background: no-repeat center/cover;
+
+}
+
+.advantage__content {
+    padding: 32px 24px;
+    border-radius: 20px;
+    border: 1px solid #C0C2CB;
+
+}
+
+.accordion-item {}
+
+.accordion-item__heading {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.accordion-item__heading:after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: no-repeat center/contain url(/assets/images/icons/arrow-down.svg);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.accordion-item.active .accordion-item__heading:after {
+    transform: rotate(180deg);
+}
+
+.advantage__title {
+    color: #0E3975;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 122%;
+    /* 36.6px */
+}
+
+.accordion-item__content {}
+
+.advantage__text {
+    padding-top: 24px;
+    color: #16181F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 122%;
+    max-width: 400px;
+}
+
+@media (max-width: 1200px) {
+    .advantages__body {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .advantages__list {
+        order: -1;
+        gap: 20px;
+    }
+    
+    .advantage__content {
+        padding: 28px 20px;
+    }
+    
+    .advantage__title {
+        font-size: 26px;
+    }
+    
+    .accordion-item__heading {
+        gap: 20px;
+    }
+    
+    .advantage__text {
+        max-width: 100%;
+        font-size: 15px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages__title {
+        margin-bottom: 30px;
+    }
+    
+    .advantages__body {
+        gap: 30px;
+    }
+    
+    .advantages__list {
+        gap: 16px;
+    }
+    
+    .advantage__image {
+        margin-bottom: 8px;
+    }
+    
+    .advantage__content {
+        padding: 20px 16px;
+    }
+    
+    .advantage__title {
+        font-size: 22px;
+    }
+    
+    .accordion-item__heading {
+        gap: 30px;
+    }
+    
+    .accordion-item__heading:after {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+    
+    .advantage__text {
+        font-size: 14px;
+        padding-top: 16px;
+    }
+}
