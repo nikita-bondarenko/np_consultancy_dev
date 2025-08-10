@@ -1,3 +1,7 @@
+#modal-text .modal__text {
+    text-align: left;
+}
+
 .modal {
     position: fixed;
     inset: 0;

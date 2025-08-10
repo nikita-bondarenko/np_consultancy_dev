@@ -1,18 +1,34 @@
 
 
+const openModal = (modal) => {
+    document.body.style.overflow = 'hidden'
+    modal.classList.add('open')
+}
 
+const closeModal = (modal) => {
+    modal.classList.remove('open')
+    document.body.style.overflow = ''
+
+}
 
 const initModalFunction = () => {
     const openButtons = document.querySelectorAll('.open-modal-button')
     const modals = document.querySelectorAll('.modal')
+
+
+
+
     Array.from(openButtons).forEach(button => button.addEventListener('click', (e) => {
         e.preventDefault();
         const modalId = button.dataset.openModalWithId
         Array.from(modals).find(modal => {
-            if (modal.id === modalId) {
-                modal.classList.add('open')
-            } else {
-                modal.classList.remove('open')
+            if (modal.id !== modalId) {
+                closeModal(modal)
+            }
+        })
+        Array.from(modals).find(modal => {
+            if (modal.id == modalId) {
+                openModal(modal)
             }
         })
 
@@ -20,7 +36,7 @@ const initModalFunction = () => {
 
     Array.from(modals).forEach(modal => {
         modal.addEventListener('click', (e) => {
-            modal.classList.remove('open')
+            closeModal(modal)
         })
         const modalWindow = modal.querySelector('.modal__window')
         if (modalWindow) {
@@ -31,7 +47,7 @@ const initModalFunction = () => {
         const closeButtons = modal.querySelectorAll('.modal__close')
         Array.from(closeButtons).forEach(button => button.addEventListener('click', (e) => {
             e.preventDefault()
-            modal.classList.remove('open')
+            closeModal(modal)
         }))
 
 
@@ -223,13 +239,14 @@ const initFormFunction = () => {
                     const modals = document.querySelectorAll('.modal')
 
                     Array.from(modals).find(modal => {
-                        if (modal.id === 'modal-success') {
-                            modal.classList.add('open')
-                            setTimeout(() => {
-                                modal.classList.remove('open')
-                            }, 3000)
+                        if (modal.id !== 'modal-success') {
+                            closeModal(modal)
+
                         } else {
-                            modal.classList.remove('open')
+                            openModal(modal)
+                            setTimeout(() => {
+                                openModal(modal)
+                            }, 3000)
                         }
                     })
 

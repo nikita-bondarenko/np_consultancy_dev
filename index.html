@@ -16,403 +16,445 @@
     <link rel="stylesheet" href="assets/css/advantages.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/feedbacks.css">
-
+    <link rel="stylesheet" href="assets/css/service-components.css">
+    <link rel="stylesheet" href="assets/css/service-steps.css">
+    <link rel="stylesheet" href="assets/css/service-cases.css">
     <script src="assets/js/modal.js" defer></script>
     <script src="assets/js/services.js" defer></script>
     <script src="assets/js/about.js" defer></script>
     <script src="assets/js/team.js" defer></script>
     <script src="assets/js/advantages.js"></script>
     <script src="assets/js/feedbacks.js"></script>
+    <script src="assets/js/cases.js"></script>
+
 </head>
 
 <body>
 
     <main>
-        <section class="services container section_indent">
-            <h2 class="title-section services__title">Наши услуги</h2>
-            <ul class="services__list">
-                <li class="services__item">
-                    <div class="service">
-                        <div class="service__top">
-                            <h3 class="service__title">Получение <strong>ипотеки в ОАЭ</strong></h3>
-                            <span>{1}</span>
+        <section class="services section_indent">
+            <div class="container">
+                <h2 class="title-section services__title">Наши услуги</h2>
+                <ul class="services__list">
+                    <li class="services__item">
+                        <div class="service">
+                            <div class="service__top">
+                                <h3 class="service__title">Получение <strong>ипотеки в ОАЭ</strong></h3>
+                                <span>{1}</span>
+                            </div>
+                            <div class="service__background"
+                                style="background-image: url(/assets/images/services/1.webp);">
+                            </div>
+                            <div class="service__content">
+                                <ul class="service__list">
+                                    <li class="service__item">
+                                        <p class="service__desc">Поможем добиться одобрения с минимальным пакетом
+                                            документов: ID, паспортом, salary certificate и выпиской из банка — всего за
+                                            3
+                                            месяца вместо стандартных 6</p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Организуем дистанционный процесс получения кредита с
+                                            необходимостью личного присутствия только на подписании офера</p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Обеспечим лучшие условия сделки — почти все наши
+                                            клиенты
+                                            получают ставку по ипотеке 4,18%</p>
+                                    </li>
+                                </ul>
+                                <button class="btn service__btn np-button open-modal-button"
+                                    data-open-modal-with-id="modal-form">Узнать подробнее</button>
+                            </div>
                         </div>
-                        <div class="service__background" style="background-image: url(/assets/images/services/1.webp);">
+                    </li>
+                    <li class="services__item">
+                        <div class="service">
+                            <div class="service__top">
+                                <h3 class="service__title">Получение <strong>Emirates ID</strong></h3>
+                                <span>{2}</span>
+                            </div>
+                            <div class="service__background"
+                                style="background-image: url(/assets/images/services/2.webp);">
+                            </div>
+                            <div class="service__content">
+                                <ul class="service__list">
+                                    <li class="service__item">
+                                        <p class="service__desc">Окажем содействие в получении резидентских виз: визы
+                                            инвестора, рабочей визы, фриланс-визы и «золотой визы»</p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Предоставим возможность пользоваться всеми
+                                            преимуществами
+                                            резидента ОАЭ</p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Подберем оптимальный тип визы в зависимости от вашего
+                                            запроса</p>
+                                    </li>
+                                </ul>
+                                <button class="btn service__btn np-button open-modal-button"
+                                    data-open-modal-with-id="modal-form">Узнать подробнее</button>
+                            </div>
                         </div>
-                        <div class="service__content">
-                            <ul class="service__list">
-                                <li class="service__item">
-                                    <p class="service__desc">Поможем добиться одобрения с минимальным пакетом
-                                        документов: ID, паспортом, salary certificate и выпиской из банка — всего за 3
-                                        месяца вместо стандартных 6</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Организуем дистанционный процесс получения кредита с
-                                        необходимостью личного присутствия только на подписании офера</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Обеспечим лучшие условия сделки — почти все наши клиенты
-                                        получают ставку по ипотеке 4,18%</p>
-                                </li>
-                            </ul>
-                            <button class="btn service__btn np-button open-modal-button"
-                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
+                    </li>
+                    <li class="services__item">
+                        <div class="service">
+                            <div class="service__top">
+                                <h3 class="service__title">Открытие <strong>компании</strong></h3>
+                                <span>{3}</span>
+                            </div>
+                            <div class="service__background"
+                                style="background-image: url(/assets/images/services/3.webp);">
+                            </div>
+                            <div class="service__content">
+                                <ul class="service__list">
+                                    <li class="service__item">
+                                        <p class="service__desc">Откроем коммерческую или профессиональную лицензию на
+                                            материке или во фризоне</p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Предложим оптимальный вариант регистрации, исходя из
+                                            особенностей вашего бизнеса</p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Сделаем процесс открытия компании понятным, прозрачным
+                                            и
+                                            предсказуемым</p>
+                                    </li>
+                                </ul>
+                                <button class="btn service__btn np-button open-modal-button"
+                                    data-open-modal-with-id="modal-form">Узнать подробнее</button>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="services__item">
-                    <div class="service">
-                        <div class="service__top">
-                            <h3 class="service__title">Получение <strong>Emirates ID</strong></h3>
-                            <span>{2}</span>
+                    </li>
+                    <li class="services__item">
+                        <div class="service">
+                            <div class="service__top">
+                                <h3 class="service__title">Открытие банковских счетов</h3>
+                                <span>{4}</span>
+                            </div>
+                            <div class="service__background"
+                                style="background-image: url(/assets/images/services/4.webp);">
+                            </div>
+                            <div class="service__content">
+                                <ul class="service__list">
+                                    <li class="service__item">
+                                        <p class="service__desc">Оперативно откроем личные и корпоративные счета в ОАЭ
+                                        </p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Подберем банк, условия и валюту под ваши цели и задачи
+                                        </p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Обеспечим возможность работы с любыми странами и
+                                            контрагентами</p>
+                                    </li>
+                                </ul>
+                                <button class="btn service__btn np-button open-modal-button"
+                                    data-open-modal-with-id="modal-form">Узнать подробнее</button>
+                            </div>
                         </div>
-                        <div class="service__background" style="background-image: url(/assets/images/services/2.webp);">
+                    </li>
+                    <li class="services__item">
+                        <div class="service">
+                            <div class="service__top">
+                                <h3 class="service__title">Продление и отмена <strong>визы</strong></h3>
+                                <span>{5}</span>
+                            </div>
+                            <div class="service__background"
+                                style="background-image: url(/assets/images/services/5.webp);">
+                            </div>
+                            <div class="service__content">
+                                <ul class="service__list">
+                                    <li class="service__item">
+                                        <p class="service__desc">Своевременно продлим визу нужного типа</p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Отменим визу в случае ее неактуальности или
+                                            необходимости
+                                            замены</p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Поможем избежать штрафов и юридических последствий
+                                            нарушения визового законодательства</p>
+                                    </li>
+                                </ul>
+                                <button class="btn service__btn np-button open-modal-button"
+                                    data-open-modal-with-id="modal-form">Узнать подробнее</button>
+                            </div>
                         </div>
-                        <div class="service__content">
-                            <ul class="service__list">
-                                <li class="service__item">
-                                    <p class="service__desc">Окажем содействие в получении резидентских виз: визы
-                                        инвестора, рабочей визы, фриланс-визы и «золотой визы»</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Предоставим возможность пользоваться всеми преимуществами
-                                        резидента ОАЭ</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Подберем оптимальный тип визы в зависимости от вашего
-                                        запроса</p>
-                                </li>
-                            </ul>
-                            <button class="btn service__btn np-button open-modal-button"
-                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
+                    </li>
+                    <li class="services__item">
+                        <div class="service">
+                            <div class="service__top">
+                                <h3 class="service__title">Продление и отмена <strong>бизнес-лицензии</strong></h3>
+                                <span>{6}</span>
+                            </div>
+                            <div class="service__background"
+                                style="background-image: url(/assets/images/services/6.webp);">
+                            </div>
+                            <div class="service__content">
+                                <ul class="service__list">
+                                    <li class="service__item">
+                                        <p class="service__desc">Окажем всестороннюю поддержку при продлении лицензии
+                                        </p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Поможем непрерывно вести бизнес на законных основаниях
+                                        </p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Урегулируем все вопросы с аннулированием неактуальной
+                                            лицензии</p>
+                                    </li>
+                                </ul>
+                                <button class="btn service__btn np-button open-modal-button"
+                                    data-open-modal-with-id="modal-form">Узнать подробнее</button>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="services__item">
-                    <div class="service">
-                        <div class="service__top">
-                            <h3 class="service__title">Открытие <strong>компании</strong></h3>
-                            <span>{3}</span>
+                    </li>
+                    <li class="services__item">
+                        <div class="service">
+                            <div class="service__top">
+                                <h3 class="service__title">Легализация <strong>документов</strong></h3>
+                                <span>{7}</span>
+                            </div>
+                            <div class="service__background"
+                                style="background-image: url(/assets/images/services/7.webp);">
+                            </div>
+                            <div class="service__content">
+                                <ul class="service__list">
+                                    <li class="service__item">
+                                        <p class="service__desc">Придадим юридическую силу на территории ОАЭ документам
+                                            об
+                                            образовании, заключении брака и рождении детей</p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Обеспечим с помощью легализации документов получение
+                                            рабочей визы, спонсорской визы мужа или жены, а также открытие Emirates ID
+                                            для
+                                            детей</p>
+                                    </li>
+                                    <li class="service__item">
+                                        <p class="service__desc">Обеспечим возможность работы с любыми странами и
+                                            контрагентами</p>
+                                    </li>
+                                </ul>
+                                <button class="btn service__btn np-button open-modal-button"
+                                    data-open-modal-with-id="modal-form">Узнать подробнее</button>
+                            </div>
                         </div>
-                        <div class="service__background" style="background-image: url(/assets/images/services/3.webp);">
-                        </div>
-                        <div class="service__content">
-                            <ul class="service__list">
-                                <li class="service__item">
-                                    <p class="service__desc">Откроем коммерческую или профессиональную лицензию на
-                                        материке или во фризоне</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Предложим оптимальный вариант регистрации, исходя из
-                                        особенностей вашего бизнеса</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Сделаем процесс открытия компании понятным, прозрачным и
-                                        предсказуемым</p>
-                                </li>
-                            </ul>
-                            <button class="btn service__btn np-button open-modal-button"
-                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="services__item">
-                    <div class="service">
-                        <div class="service__top">
-                            <h3 class="service__title">Открытие банковских счетов</h3>
-                            <span>{4}</span>
-                        </div>
-                        <div class="service__background" style="background-image: url(/assets/images/services/4.webp);">
-                        </div>
-                        <div class="service__content">
-                            <ul class="service__list">
-                                <li class="service__item">
-                                    <p class="service__desc">Оперативно откроем личные и корпоративные счета в ОАЭ</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Подберем банк, условия и валюту под ваши цели и задачи</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Обеспечим возможность работы с любыми странами и
-                                        контрагентами</p>
-                                </li>
-                            </ul>
-                            <button class="btn service__btn np-button open-modal-button"
-                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="services__item">
-                    <div class="service">
-                        <div class="service__top">
-                            <h3 class="service__title">Продление и отмена <strong>визы</strong></h3>
-                            <span>{5}</span>
-                        </div>
-                        <div class="service__background" style="background-image: url(/assets/images/services/5.webp);">
-                        </div>
-                        <div class="service__content">
-                            <ul class="service__list">
-                                <li class="service__item">
-                                    <p class="service__desc">Своевременно продлим визу нужного типа</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Отменим визу в случае ее неактуальности или необходимости
-                                        замены</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Поможем избежать штрафов и юридических последствий
-                                        нарушения визового законодательства</p>
-                                </li>
-                            </ul>
-                            <button class="btn service__btn np-button open-modal-button"
-                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="services__item">
-                    <div class="service">
-                        <div class="service__top">
-                            <h3 class="service__title">Продление и отмена <strong>бизнес-лицензии</strong></h3>
-                            <span>{6}</span>
-                        </div>
-                        <div class="service__background" style="background-image: url(/assets/images/services/6.webp);">
-                        </div>
-                        <div class="service__content">
-                            <ul class="service__list">
-                                <li class="service__item">
-                                    <p class="service__desc">Окажем всестороннюю поддержку при продлении лицензии</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Поможем непрерывно вести бизнес на законных основаниях</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Урегулируем все вопросы с аннулированием неактуальной
-                                        лицензии</p>
-                                </li>
-                            </ul>
-                            <button class="btn service__btn np-button open-modal-button"
-                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="services__item">
-                    <div class="service">
-                        <div class="service__top">
-                            <h3 class="service__title">Легализация <strong>документов</strong></h3>
-                            <span>{7}</span>
-                        </div>
-                        <div class="service__background" style="background-image: url(/assets/images/services/7.webp);">
-                        </div>
-                        <div class="service__content">
-                            <ul class="service__list">
-                                <li class="service__item">
-                                    <p class="service__desc">Придадим юридическую силу на территории ОАЭ документам об
-                                        образовании, заключении брака и рождении детей</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Обеспечим с помощью легализации документов получение
-                                        рабочей визы, спонсорской визы мужа или жены, а также открытие Emirates ID для
-                                        детей</p>
-                                </li>
-                                <li class="service__item">
-                                    <p class="service__desc">Обеспечим возможность работы с любыми странами и
-                                        контрагентами</p>
-                                </li>
-                            </ul>
-                            <button class="btn service__btn np-button open-modal-button"
-                                data-open-modal-with-id="modal-form">Узнать подробнее</button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="about container section_indent">
-            <h2 class="title-section about__title">О нас</h2>
-            <div class="about__body">
-                <div class="about__text">
-                    <p>Мы — консалтинговая компания, которая помогает бизнесу расти, находить новые возможности и
-                        справляться с вызовами. Работаем с цифрами, стратегиями и людьми — и всегда стремимся к
-                        практическому результату. Скоро здесь появится подробная история о нас. Пока что — просто делаем
-                        свою работу.
-                    </p>
-                    <p>
-                        Мы — те, кто помогает бизнесу не тонуть в хаосе и неопределённости. Умеем находить структуру в
-                        беспорядке, задавать правильные вопросы и предлагать работающие решения. Здесь скоро будет чуть
-                        больше текста и чуть меньше загадок. Здесь скоро будет чуть больше текста и чуть меньше загадок.
-                    </p>
-                    <p>
-                        Мы — те, кто помогает бизнесу не тонуть в хаосе и неопределённости. Умеем находить структуру в
-                        беспорядке, задавать правильные вопросы и предлагать работающие решения. Здесь скоро будет чуть
-                        больше текста и чуть меньше загадок. Здесь скоро будет чуть больше текста и чуть меньше загадок.
-
-                    </p>
-
-                </div>
-                <div class="about__image" style="background-image: url(/assets/images/about/1.webp);"></div>
+                    </li>
+                </ul>
             </div>
-            <ul class="about__list">
-                <li class="about__item">
-                    <div class="about__card">
-                        <h3 class="about__subtitle">30+</h3>
-                        <p class="about__info">Успешных кейсов</p>
-                    </div>
-                </li>
-                <li class="about__item">
-                    <div class="about__card">
-                        <h3 class="about__subtitle">4+ лет</h3>
-                        <p class="about__info">На рынке Дубая</p>
-                    </div>
-                </li>
-                <li class="about__item">
-                    <div class="about__card">
-                        <h3 class="about__subtitle">30+</h3>
-                        <p class="about__info">Успешных кейсов</p>
-                    </div>
-                </li>
-            </ul>
         </section>
-
-        <section class="team container section_indent">
-            <h2 class="title-section team__title">Наша команда</h2>
-            <div class="team__body">
-                <div class="team__content">
-                    <div class="team__text">
+        <section class="about  section_indent">
+            <div class="container">
+                <h2 class="title-section about__title">О нас</h2>
+                <div class="about__body">
+                    <div class="about__text">
                         <p>Мы — консалтинговая компания, которая помогает бизнесу расти, находить новые возможности и
-                            справляться с вызовами.</p>
-                        <p>Работаем с цифрами, стратегиями и людьми — и всегда
-                            стремимся к практическому результату. Скоро здесь появится подробная история о нас. Пока что
-                            — просто делаем свою работу.</p>
+                            справляться с вызовами. Работаем с цифрами, стратегиями и людьми — и всегда стремимся к
+                            практическому результату. Скоро здесь появится подробная история о нас. Пока что — просто
+                            делаем
+                            свою работу.
+                        </p>
+                        <p>
+                            Мы — те, кто помогает бизнесу не тонуть в хаосе и неопределённости. Умеем находить структуру
+                            в
+                            беспорядке, задавать правильные вопросы и предлагать работающие решения. Здесь скоро будет
+                            чуть
+                            больше текста и чуть меньше загадок. Здесь скоро будет чуть больше текста и чуть меньше
+                            загадок.
+                        </p>
+                        <p>
+                            Мы — те, кто помогает бизнесу не тонуть в хаосе и неопределённости. Умеем находить структуру
+                            в
+                            беспорядке, задавать правильные вопросы и предлагать работающие решения. Здесь скоро будет
+                            чуть
+                            больше текста и чуть меньше загадок. Здесь скоро будет чуть больше текста и чуть меньше
+                            загадок.
+
+                        </p>
+
                     </div>
-                    <button class="btn btn-main open-modal-button np-button"
-                        data-open-modal-with-id="modal-form">Бесплатная
-                        консультация</button>
+                    <div class="about__image" style="background-image: url(/assets/images/about/1.webp);"></div>
                 </div>
-                <div class="team__image" style="background-image: url('/assets/images/team/1.png');"></div>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <div class="about__card">
+                            <h3 class="about__subtitle">30+</h3>
+                            <p class="about__info">Успешных кейсов</p>
+                        </div>
+                    </li>
+                    <li class="about__item">
+                        <div class="about__card">
+                            <h3 class="about__subtitle">4+ лет</h3>
+                            <p class="about__info">На рынке Дубая</p>
+                        </div>
+                    </li>
+                    <li class="about__item">
+                        <div class="about__card">
+                            <h3 class="about__subtitle">30+</h3>
+                            <p class="about__info">Успешных кейсов</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="advantages container section_indent">
-            <h2 class="title-section advantages__title">Наши преимущества</h2>
-            <div class="advantages__body">
-                <ul class="advantages__list">
-                    <li class="advantages__item">
-                        <div class="advantage">
-                            <div class="advantage__image"
-                                style="background-image: url('/assets/images/advantages/1.png')">
-                            </div>
-                            <div class="accordion-item advantage__content">
-                                <div class="accordion-item__heading advantage__title">Ни одного отказа по ипотеке</div>
-                                <div class="accordion-item__wrapper">
-                                    <div class="accordion-item__content advantage__text">
-                                        <p>
-                                            За всю практику не было ни одного отрицательного решения по ипотеке,
-                                            оформляемой
-                                            при нашем содействии
-                                        </p>
+        <section class="team section_indent">
+            <div class="container">
+                <h2 class="title-section team__title">Наша команда</h2>
+                <div class="team__body">
+                    <div class="team__content">
+                        <div class="team__text">
+                            <p>Мы — консалтинговая компания, которая помогает бизнесу расти, находить новые возможности
+                                и
+                                справляться с вызовами.</p>
+                            <p>Работаем с цифрами, стратегиями и людьми — и всегда
+                                стремимся к практическому результату. Скоро здесь появится подробная история о нас. Пока
+                                что
+                                — просто делаем свою работу.</p>
+                        </div>
+                        <button class="btn btn-main open-modal-button np-button"
+                            data-open-modal-with-id="modal-form">Бесплатная
+                            консультация</button>
+                    </div>
+                    <div class="team__image" style="background-image: url('/assets/images/team/1.png');"></div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages section_indent">
+            <div class="container">
+                <h2 class="title-section advantages__title">Наши преимущества</h2>
+                <div class="advantages__body">
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <div class="advantage">
+                                <div class="advantage__image"
+                                    style="background-image: url('/assets/images/advantages/1.png')">
+                                </div>
+                                <div class="accordion-item advantage__content">
+                                    <div class="accordion-item__heading advantage__title">Ни одного отказа по ипотеке
+                                    </div>
+                                    <div class="accordion-item__wrapper">
+                                        <div class="accordion-item__content advantage__text">
+                                            <p>
+                                                За всю практику не было ни одного отрицательного решения по ипотеке,
+                                                оформляемой
+                                                при нашем содействии
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="advantage">
-                            <div class="advantage__image"
-                                style="background-image: url('/assets/images/advantages/2.png')">
-                            </div>
-                            <div class="accordion-item advantage__content">
-                                <div class="accordion-item__heading advantage__title">Четкость и прозрачность</div>
-                                <div class="accordion-item__wrapper">
-                                    <div class="accordion-item__content advantage__text">
-                                        <p>
-                                            Делаем решение ваших задач понятным и предсказуемым с точки зрения сроков,
-                                            затрат и
-                                            конечного результата
-                                        </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantage">
+                                <div class="advantage__image"
+                                    style="background-image: url('/assets/images/advantages/2.png')">
+                                </div>
+                                <div class="accordion-item advantage__content">
+                                    <div class="accordion-item__heading advantage__title">Четкость и прозрачность</div>
+                                    <div class="accordion-item__wrapper">
+                                        <div class="accordion-item__content advantage__text">
+                                            <p>
+                                                Делаем решение ваших задач понятным и предсказуемым с точки зрения
+                                                сроков,
+                                                затрат и
+                                                конечного результата
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="advantage">
-                            <div class="advantage__image"
-                                style="background-image: url('/assets/images/advantages/3.png')">
-                            </div>
-                            <div class="accordion-item advantage__content">
-                                <div class="accordion-item__heading advantage__title">Помощь в открытии бизнеса с нуля
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantage">
+                                <div class="advantage__image"
+                                    style="background-image: url('/assets/images/advantages/3.png')">
                                 </div>
-                                <div class="accordion-item__wrapper">
-                                    <div class="accordion-item__content advantage__text">
-                                        <p>
-                                            Трансформируем ваши идеи и планы в эффективно работающую компанию
-                                        </p>
+                                <div class="accordion-item advantage__content">
+                                    <div class="accordion-item__heading advantage__title">Помощь в открытии бизнеса с
+                                        нуля
+                                    </div>
+                                    <div class="accordion-item__wrapper">
+                                        <div class="accordion-item__content advantage__text">
+                                            <p>
+                                                Трансформируем ваши идеи и планы в эффективно работающую компанию
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="advantages__list">
+                        </li>
+                    </ul>
+                    <ul class="advantages__list">
 
 
-                    <li class="advantages__item">
-                        <div class="advantage">
-                            <div class="advantage__image"
-                                style="background-image: url('/assets/images/advantages/4.png')">
-                            </div>
-                            <div class="accordion-item advantage__content">
-                                <div class="accordion-item__heading advantage__title">4 года на рынке ОАЭ</div>
-                                <div class="accordion-item__wrapper">
-                                    <div class="accordion-item__content advantage__text">
-                                        <p>
+                        <li class="advantages__item">
+                            <div class="advantage">
+                                <div class="advantage__image"
+                                    style="background-image: url('/assets/images/advantages/4.png')">
+                                </div>
+                                <div class="accordion-item advantage__content">
+                                    <div class="accordion-item__heading advantage__title">4 года на рынке ОАЭ</div>
+                                    <div class="accordion-item__wrapper">
+                                        <div class="accordion-item__content advantage__text">
+                                            <p>
 
-                                            За это время мы закрыли множество успешных кейсов, поэтому знаем, как
-                                            действовать в
-                                            любой ситуации
-                                        </p>
+                                                За это время мы закрыли множество успешных кейсов, поэтому знаем, как
+                                                действовать в
+                                                любой ситуации
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="advantage">
-                            <div class="advantage__image"
-                                style="background-image: url('/assets/images/advantages/5.png')">
-                            </div>
-                            <div class="accordion-item advantage__content">
-                                <div class="accordion-item__heading advantage__title">Сопровождение на всех этапах</div>
-                                <div class="accordion-item__wrapper">
-                                    <div class="accordion-item__content advantage__text">
-                                        <p>
-                                            Оказываем комплексную поддержку — от первого обращения до достижения
-                                            поставленной
-                                            цели
-                                        </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantage">
+                                <div class="advantage__image"
+                                    style="background-image: url('/assets/images/advantages/5.png')">
+                                </div>
+                                <div class="accordion-item advantage__content">
+                                    <div class="accordion-item__heading advantage__title">Сопровождение на всех этапах
+                                    </div>
+                                    <div class="accordion-item__wrapper">
+                                        <div class="accordion-item__content advantage__text">
+                                            <p>
+                                                Оказываем комплексную поддержку — от первого обращения до достижения
+                                                поставленной
+                                                цели
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="advantage">
-                            <div class="advantage__image"
-                                style="background-image: url('/assets/images/advantages/6.png')">
-                            </div>
-                            <div class="accordion-item advantage__content">
-                                <div class="accordion-item__heading advantage__title">Заслуженное доверие</div>
-                                <div class="accordion-item__wrapper">
-                                    <div class="accordion-item__content advantage__text">
-                                        <p>
-                                            Действующие клиенты высоко оценивают нашу экспертность и рекомендуют нас
-                                            коллегам,
-                                            партнерам и друзьям
-                                        </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantage">
+                                <div class="advantage__image"
+                                    style="background-image: url('/assets/images/advantages/6.png')">
+                                </div>
+                                <div class="accordion-item advantage__content">
+                                    <div class="accordion-item__heading advantage__title">Заслуженное доверие</div>
+                                    <div class="accordion-item__wrapper">
+                                        <div class="accordion-item__content advantage__text">
+                                            <p>
+                                                Действующие клиенты высоко оценивают нашу экспертность и рекомендуют нас
+                                                коллегам,
+                                                партнерам и друзьям
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>ß
             </div>
         </section>
         <section id="why-uae" class="why-uae">
@@ -702,8 +744,8 @@
                                 <div class="feedback__text">
                                     <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
                                         аэропорты,
-                                        морские порты, дороги, офисные и жилые помещения, а также телекоммуникации
-                                        и интернет-соединения, отвечающие высоким стандартам.</p>
+                                        морские порты, дороги, офисные и жилые помещения, а также телекоммуникации
+                                        и интернет-соединения, отвечающие высоким стандартам.</p>
                                 </div>
                                 <h3 class="feedback__client">
                                     Какая-то компания
@@ -752,8 +794,8 @@
                                 <div class="feedback__text">
                                     <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
                                         аэропорты,
-                                        морские порты, дороги, офисные и жилые помещения, а также телекоммуникации
-                                        и интернет-соединения, отвечающие высоким стандартам.</p>
+                                        морские порты, дороги, офисные и жилые помещения, а также телекоммуникации
+                                        и интернет-соединения, отвечающие высоким стандартам.</p>
                                 </div>
                                 <h3 class="feedback__client">
                                     Какая-то компания
@@ -800,6 +842,377 @@
                     </div>
                     <div class="feedbacks__pagination swiper-pagination"></div>
 
+                </div>
+            </div>
+        </section>
+        <section class="service-components section_indent">
+            <div class="container">
+                <h2 class="title-section service-components__title">Наши услуги</h2>
+                <ul class="service-components__list">
+                    <li class="service-components__item">
+                        <div class="service-component">
+                            <div class="service-component__top">
+                                <h3 class="service-component__title">Агенты по недвижимости
+                                    и частные покупатели</h3>
+                                <span>{1}</span>
+                            </div>
+                            <div class="service-component__content">
+                                <p>
+                                    Отдельные лица и профессиональные участники рынка, желающие приобрести недвижимость
+                                    в ОАЭ в
+                                    ипотеку
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-components__item">
+                        <div class="service-component">
+                            <div class="service-component__top">
+                                <h3 class="service-component__title">Релоканты</h3>
+                                <span>{2}</span>
+                            </div>
+                            <div class="service-component__content">
+                                <p>
+                                    Все, кто переехали или хотят переехать
+                                    в ОАЭ для работы, открытия бизнеса
+                                    и проживания с семьей
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-components__item">
+                        <div class="service-component">
+                            <div class="service-component__top">
+                                <h3 class="service-component__title">Собственники
+                                    бизнеса/стартапов </h3>
+                                <span>{3}</span>
+                            </div>
+                            <div class="service-component__content">
+                                <p>
+                                    Владельцы компаний, желающие открыть
+                                    или релоцировать бизнес в ОАЭ, а также официально трудоустроить своих сотрудников
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-components__item">
+                        <div class="service-component">
+                            <div class="service-component__top">
+                                <h3 class="service-component__title">Инвесторы </h3>
+                                <span>{4}</span>
+                            </div>
+                            <div class="service-component__content">
+                                <p>
+                                    Покупатели элитной недвижимости в ОАЭ
+                                    с возможностью получения «золотой визы»,
+                                    а также лица, размещающие капиталы
+                                    в банках страны
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-components__item">
+                        <div class="service-component">
+                            <div class="service-component__top">
+                                <h3 class="service-component__title">Фрилансеры </h3>
+                                <span>{5}</span>
+                            </div>
+                            <div class="service-component__content">
+                                <p>
+                                    Иностранные специалисты в сфере дизайна,
+                                    IT, образования, СМИ, стремящиеся вести легальную фрилансерскую деятельность
+                                    на территории Эмиратов с возможностью открытия счета и аренды жилья
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-components__item">
+                        <div class="service-component">
+                            <div class="service-component__top">
+                                <h3 class="service-component__title">Супруги, дети, родители резидентов ОАЭ </h3>
+                                <span>{6}</span>
+                            </div>
+                            <div class="service-component__content">
+                                <p>
+                                    Близкие родственники, желающие получить спонсорскую визу, легализоваться
+                                    и полноценно проживать на территории
+                                    ОАЭ в долгосрочной перспективе
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="service-steps">
+            <div class="container">
+                <h2 class="service-steps__title title-section">Этапы работы</h2>
+                <div class="service-steps__body">
+                    <ul class="service-steps__list">
+                        <li class="service-steps__item accordion-item">
+                            <h3 class="accordion-item__heading service-steps__heading">{1} Этап</h3>
+                            <div class="accordion-item__wrapper">
+                                <div class="accordion-item__content service-steps__content">
+                                    <p>
+                                        В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты,
+                                        морские порты, дороги, офисные и жилые помещения, а также телекоммуникации
+                                        и интернет-соединения, отвечающие высоким стандартам, офисные и жилые помещения,
+                                        а
+                                        также
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service-steps__item accordion-item">
+                            <h3 class="accordion-item__heading service-steps__heading">{2} Этап</h3>
+                            <div class="accordion-item__wrapper">
+                                <div class="accordion-item__content service-steps__content">
+                                    <p>
+                                        В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты,
+                                        морские порты, дороги, офисные и жилые помещения, а также телекоммуникации
+                                        и интернет-соединения, отвечающие высоким стандартам, офисные и жилые помещения,
+                                        а
+                                        также
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service-steps__item accordion-item">
+                            <h3 class="accordion-item__heading service-steps__heading">{3} Этап</h3>
+                            <div class="accordion-item__wrapper">
+                                <div class="accordion-item__content service-steps__content">
+                                    <p>
+                                        В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты,
+                                        морские порты, дороги, офисные и жилые помещения, а также телекоммуникации
+                                        и интернет-соединения, отвечающие высоким стандартам, офисные и жилые помещения,
+                                        а
+                                        также
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service-steps__item accordion-item">
+                            <h3 class="accordion-item__heading service-steps__heading">{4} Этап</h3>
+                            <div class="accordion-item__wrapper">
+                                <div class="accordion-item__content service-steps__content">
+                                    <p>
+                                        В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты,
+                                        морские порты, дороги, офисные и жилые помещения, а также телекоммуникации
+                                        и интернет-соединения, отвечающие высоким стандартам, офисные и жилые помещения,
+                                        а
+                                        также
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service-steps__item accordion-item">
+                            <h3 class="accordion-item__heading service-steps__heading">{5} Этап</h3>
+                            <div class="accordion-item__wrapper">
+                                <div class="accordion-item__content service-steps__content">
+                                    <p>
+                                        В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты,
+                                        морские порты, дороги, офисные и жилые помещения, а также телекоммуникации
+                                        и интернет-соединения, отвечающие высоким стандартам, офисные и жилые помещения,
+                                        а
+                                        также
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="service-steps__image" style="background-image: url(/assets/images/service-steps/1.png)">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service-cases">
+            <div class="container">
+                <div class="service-cases__top">
+                    <h2 class="service-cases__title title-section">Наши кейсы</h2>
+                    <div class="service-cases__arrows">
+                        <button type="button" class="service-cases__arrow arrow arrow--prev">
+                            <svg width="29" height="52" viewBox="0 0 29 52" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.70853e-07 26C8.71951e-07 23.6871 1.43977 22.2553 2.95593 20.7497L22.65 1.08916C24.1025 -0.363055 26.4581 -0.363055 27.9106 1.08916C29.3631 2.53885 29.3631 4.8898 27.9106 6.33942L8.21913 26L27.9106 45.6606C29.3631 47.1103 29.3631 49.4612 27.9106 50.9108C26.4581 52.3631 24.1025 52.3631 22.65 50.9108L2.95593 31.2502C1.43984 29.7447 6.69754e-07 28.3129 7.70853e-07 26Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                        <button type="button" class="service-cases__arrow arrow arrow--next">
+                            <svg width="29" height="52" viewBox="0 0 29 52" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.70853e-07 26C8.71951e-07 23.6871 1.43977 22.2553 2.95593 20.7497L22.65 1.08916C24.1025 -0.363055 26.4581 -0.363055 27.9106 1.08916C29.3631 2.53885 29.3631 4.8898 27.9106 6.33942L8.21913 26L27.9106 45.6606C29.3631 47.1103 29.3631 49.4612 27.9106 50.9108C26.4581 52.3631 24.1025 52.3631 22.65 50.9108L2.95593 31.2502C1.43984 29.7447 6.69754e-07 28.3129 7.70853e-07 26Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper service-cases__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide service-cases__card">
+                            <div class="service-case">
+                                <div class="service-case__text">
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                </div>
+                                <button class="np-button service-case__button open-modal-button"
+                                    data-open-modal-with-id="modal-text">Читать все</button>
+                                <div class="service-case__content" hidden>
+                                    1 <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide service-cases__card">
+                            <div class="service-case">
+                                <div class="service-case__text">
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                </div>
+                                <button class="np-button service-case__button open-modal-button"
+                                    data-open-modal-with-id="modal-text">Читать все</button>
+                                <div class="service-case__content" hidden>
+                                    2 <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide service-cases__card">
+                            <div class="service-case">
+                                <div class="service-case__text">
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                </div>
+                                <button class="np-button service-case__button open-modal-button"
+                                    data-open-modal-with-id="modal-text">Читать все</button>
+                                <div class="service-case__content" hidden>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide service-cases__card">
+                            <div class="service-case">
+                                <div class="service-case__text">
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                </div>
+                                <button class="np-button service-case__button open-modal-button"
+                                    data-open-modal-with-id="modal-text">Читать все</button>
+                                <div class="service-case__content" hidden>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide service-cases__card">
+                            <div class="service-case">
+                                <div class="service-case__text">
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                </div>
+                                <button class="np-button service-case__button open-modal-button"
+                                    data-open-modal-with-id="modal-text">Читать все</button>
+                                <div class="service-case__content" hidden>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide service-cases__card">
+                            <div class="service-case">
+                                <div class="service-case__text">
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                </div>
+                                <button class="np-button service-case__button open-modal-button"
+                                    data-open-modal-with-id="modal-text">Читать все</button>
+                                <div class="service-case__content" hidden>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                    <p>В ОАЭ сформирована первоклассная инфраструктура, включающая современные
+                                        аэропорты, морские порты, дороги, офисные и жилые помещения, а также
+                                        телекоммуникации и интернет-соединения, отвечающие высоким стандартам,
+                                        офисные и жилые помещения, а также...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-cases__pagination swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -903,6 +1316,18 @@
                     Оператор свяжется с вами <br /> в течении рабочего дня.
                 </p>
                 <button class=" np-button modal__close">Понятно</button>
+            </div>
+            <button class="modal__close modal__cross-button">
+                <span class="cross-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div id="modal-text" class="modal ">
+        <div class="modal__window">
+            <div class="modal__body">
+                <div class="modal__text">
+
+                </div>
             </div>
             <button class="modal__close modal__cross-button">
                 <span class="cross-icon"></span>

@@ -1,0 +1,141 @@
+.service-components {}
+
+.section_indent {}
+
+
+.service-components__title {
+    margin-bottom: 60px;
+
+
+}
+
+.service-components__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.service-components__item {}
+
+.service-component {
+    border: 2px solid #C0C2CB;
+    border-radius: 20px;
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    gap: 50px;
+    overflow: hidden;
+    min-height: 360px;
+}
+
+.service-component__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 122%;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 20;
+    gap: 50px;
+}
+
+.service-component__title {
+    color: #0E3975;
+}
+
+.service-component__title strong {
+    color: #0E3975;
+    font-weight: 600;
+}
+
+.service-component__top span {
+    color: #C0C2CB;
+    transition: color 0.5s ease-in-out;
+}
+
+
+.service-component__content {
+ 
+    color: #3A3D46;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 122%;
+}
+
+
+@media (max-width: 1200px) {
+
+    .service-components__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .service-component {
+        padding: 20px;
+        min-height: 280px;
+        gap: 10px;
+    }
+
+    .service-component__top {
+        font-size: 26px;
+        margin-bottom: 16px;
+        flex-wrap: nowrap;
+        gap: 30px;
+        align-items: flex-start;
+
+    }
+
+    .service-component__top span {
+        margin-top: 2px;
+        color: #C0C2CB;
+    }
+
+}
+
+
+@media (max-width:767px) {
+    
+
+    .service-components__title {
+        margin-bottom: 40px;
+
+    }
+
+    .service-components__list {
+        gap: 16px;
+        grid-template-columns: 1fr;
+    }
+
+    .service-component {
+        width: 100%;
+        min-width: 100%;
+        padding: 16px;
+        min-height: 240px;
+    }
+
+    .service-component__top {
+        font-size: 22px;
+        margin-bottom: 12px;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .service-component__title {
+        flex-shrink: 1;
+    }
+
+    .service-component__top span {
+        margin-top: 5px;
+    }
+
+
+    .service-component__content {
+        font-size: 14px;
+    }
+
+}

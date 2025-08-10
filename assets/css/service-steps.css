@@ -1,0 +1,120 @@
+.service-steps {}
+
+.service-steps__title {
+    margin-bottom: 60px;
+}
+
+.title-section {}
+
+.service-steps__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+
+}
+
+.service-steps__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.service-steps__item {
+    border-radius: 20px;
+    border: 1px solid #C0C2CB;
+    padding: 32px 24px;
+
+}
+
+
+
+.service-steps__heading {
+    color: #16181F;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 122%;
+    /* 19.52px */
+}
+
+
+
+.service-steps__content {
+    padding-top: 20px;
+    color: #16181F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 122%;
+    padding-right: 30px;
+}
+
+.service-steps__image {
+    background: no-repeat center/cover;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Адаптив до 1200px --- */
+@media (max-width: 1200px) {
+    .service-steps__body {
+        grid-template-columns: 1fr;
+        /* Картинка уйдет под список */
+        gap: 32px;
+    }
+
+    .service-steps__image {
+        order: -1;
+        height: 400px;
+        /* фиксированная высота, чтобы картинка не была слишком маленькой */
+    }
+
+    .service-steps__title {
+        margin-bottom: 40px;
+        font-size: 28px;
+    }
+
+    .service-steps__heading {
+        font-size: 18px;
+    }
+
+    .service-steps__content {
+        font-size: 15px;
+        padding-right: 0;
+        /* убираем правый отступ */
+    }
+}
+
+/* --- Адаптив до 767px --- */
+@media (max-width: 767px) {
+    .service-steps__body {
+        grid-template-columns: 1fr;
+        /* одна колонка */
+        gap: 20px;
+    }
+
+    .service-steps__list {
+        gap: 16px;
+    }
+
+    .service-steps__item {
+        padding: 20px 16px;
+    }
+
+    .service-steps__title {
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+
+    .service-steps__heading {
+        font-size: 16px;
+    }
+
+    .service-steps__content {
+        font-size: 14px;
+        padding-top: 15px;
+    }
+
+    .service-steps__image {
+        height: 250px;
+    }
+}
